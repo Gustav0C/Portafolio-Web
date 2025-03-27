@@ -6,21 +6,23 @@ import GithubIcon from "../icons/Github.astro";
 import TwitterIcon from "../icons/Twitter.astro";
 ---
 
-<div class="max-w-2xl">
-  <h1
-    class="text-white text-4xl font-bold flex justify-center flex-row gap-x-4"
-  >
-    Hey, Soy Gustavo <div class="flex justify-center items-center">
-      <Badge >Disponible para trabajar</Badge>
+<div class="max-w-2xl mx-auto">
+  <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 mb-4">
+    <h1 class="text-white text-3xl sm:text-4xl font-bold text-center sm:text-left">
+      Hey, Soy Gustavo
+    </h1>
+    <div class="flex justify-center items-center">
+      <Badge>Disponible para trabajar</Badge>
     </div>
-  </h1>
-  <h2 class="text-xl opacity-80 text-wrap py-5 text-justify">
+  </div>
+  
+  <h2 class="text-lg sm:text-xl opacity-80 text-wrap py-3 sm:py-5 text-center sm:text-justify">
     Ingeniero de Sistemas y Desarrollador Web. De Ica, Peru. Especializado en el
     desarrollo de aplicaciones web y móviles. Me gusta aprender nuevas
     tecnologías y mejorar mis habilidades.
   </h2>
 
-  <nav class="flex gap-x-4 mt-8">
+  <nav class="flex flex-wrap justify-center sm:justify-start gap-4 mt-6 sm:mt-8">
     <SocialPill href="https://www.linkedin.com/in/gscp/">
       <LinkedInIcon class="w-6 h-6" />
       LinkedIn
