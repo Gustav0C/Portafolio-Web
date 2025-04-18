@@ -1,6 +1,10 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro";
 const navItems = [
+  {
+    title: "Skills",
+    label: "habilidades",
+    url: "#skills",
+  },
   {
     title: "Experience",
     label: "experiencia",
@@ -24,32 +28,33 @@ const navItems = [
 ];
 ---
 
-<header class="flex justify-between items-center py-3 mx-auto p-5 w-auto lg:w-[1000px]">
-  
-  <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-500" src="foto1.webp" alt="Bordered avatar">
+<header class="flex items-center py-3 mx-auto p-5 w-auto justify-center relative">
+  <div class="navbar flex fixed top-5 z-50">
+    <img class="w-10 h-10 rounded-full ring-2 ring-gray-500" src="foto1.webp" alt="Avatar">
 
-  <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-200 justify-center items-center"
-  >
-    {
-      navItems.map((link) => (
-        <a
-          class="relative block px-2 py-2 transition hover:text-blue-500"
-          aria-label={link.label}
-          href={link.url}
-        >
-          {link.title}
-        </a>
-      ))
-    }
-  </nav>
-  
+    <nav
+      class="flex px-3 text-sm font-medium rounded-full text-gray-200 justify-center items-center"
+    >
+      {
+        navItems.map((link) => (
+          <a
+            class="relative block px-2 py-2 transition hover:underline hover:decoration-2 hover:decoration-gray-200 hover:underline-offset-8 ease-in-out duration-300 "
+            aria-label={link.label}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
 </header>
 
 <style>
-  nav {
-    animation: nav-shadown 1s linear both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
   }
 </style>

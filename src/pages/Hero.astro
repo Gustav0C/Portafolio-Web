@@ -1,12 +1,13 @@
 ---
-import Badge from "./Badge.astro";
-import SocialPill from "./SocialPill.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import GithubIcon from "../icons/Github.astro";
 import TwitterIcon from "../icons/Twitter.astro";
 ---
 
-<div class="max-w-2xl mx-auto">
+<div class="max-w-2xl mx-auto sm:py-10 py-5 px-4">
+  <div class="size-30"><img src="frontimage.webp" alt="front image"/></div>
   <div
     class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 mb-4"
   >
@@ -40,7 +41,7 @@ import TwitterIcon from "../icons/Twitter.astro";
       Github
     </SocialPill>
     <SocialPill
-      href="/public/CV de Gustavo Canales.docx"
+      href="https://docs.google.com/document/d/1w1PjBj77bJ_-5owdeZAG3clwWZ3yTWCM/edit?usp=drive_link&ouid=117965255400179860083&rtpof=true&sd=true"
       download="CV de Gustavo Canales.docx"
     >
       <TwitterIcon class="w-6 h-6" />

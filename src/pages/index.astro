@@ -1,27 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Hero from "../components/Hero.astro";
-import Skills from "../components/Skills.astro";
-import Experience from "../components/Experience.astro";
-import Proyects from "../components/Proyects.astro";
+import Hero from "../pages/Hero.astro";
+import Skills from "../pages/Skills.astro";
+import Experience from "../pages/Experience.astro";
+import Proyects from "../pages/Proyects.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import About from "../components/About.astro";
+import About from "../pages/About.astro";
 ---
 
 <Layout
   title="Portafolio de Gustavo Canales -Desarrollador y Programador Web"
 />
-<main>
-    <Header />
-  <SectionContainer id="#top" class="md:py-30 lg:py-30 lg:pb-25">
+<main class="cursor-cell">
+  <Header />
+  <SectionContainer id="#top" class=" md:py-30 lg:py-30 lg:pb-40">
     <Hero />
   </SectionContainer>
   <SectionContainer id="skills" class="py-5 md:py-22">
     <Skills />
   </SectionContainer>
-  <SectionContainer id="experiencia" class="py-5 md:py-25 ">
+  <SectionContainer id="experiencia" class="py-5 md:py-25">
     <Experience />
   </SectionContainer>
   <SectionContainer id="proyectos" class="py-5 md:py-25">
